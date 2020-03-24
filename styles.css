@@ -1,0 +1,85 @@
+/* This is .scss code that needs to be compiled with SASS */
+/* This is an exercise in inheritance
+%gchnav   {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.index  {
+    @extend %gchnav;
+    background-color: green;
+}
+.players  {
+    @extend %gchnav;
+    background-color: blue;
+}
+.honours  {
+    @extend %gchnav;
+    background-color: yellow;
+}
+.rivals  {
+    @extend %gchnav;
+    background-color: red;
+}
+*/
+
+/* This is .scss code that needs to be compiled with SASS */
+/* This is an exercise in variables
+$color: red;
+
+ul  {
+    font-size: 14px;
+    color: $color;
+}
+
+ol  {
+    font-size: 14px;
+    color: $color;
+}
+*/
+
+/* This is .scss code that needs to be compiled with SASS */
+/* This is an exercise in nesting
+#nesthonours    {
+            font-size: 18px;
+            ul  {
+                color: green;
+            }
+}
+
+*/
+/* media query for responsive design on mobile phone screens */
+@media (min-width: 500px)   {
+    header h1::before   {
+        content: "DCFC: Derby County Football Club";
+    }
+}
+@media (max-width: 500px)   {
+    header h1::before   {
+        content: "DCFC";
+    }
+}
+
+/* This applies to the links in the Nav bar*/
+a:link
+{
+    color: red;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* This floats the image over to the left margin */
+/*.img-thumbnail
+{
+    float:left;
+}
+*/
+.caption    {
+    width: image width px;
+    font-size:80%;
+    text-align: center;
+}
