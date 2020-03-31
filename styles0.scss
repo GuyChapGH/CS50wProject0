@@ -16,7 +16,7 @@
 }
 .players  {
     @extend %gchnav;
-    background-color: blue;
+    background-color: pink;
 }
 .honours  {
     @extend %gchnav;
@@ -33,12 +33,12 @@
 $weight: bold;
 
 ul  {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: $weight;
 }
 
 ol  {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: $weight;
 }
 
