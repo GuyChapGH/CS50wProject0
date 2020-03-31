@@ -6,8 +6,9 @@
 /* This is an exercise in inheritance */
 %gchnav   {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
+    color: white;
 }
 .index  {
     @extend %gchnav;
