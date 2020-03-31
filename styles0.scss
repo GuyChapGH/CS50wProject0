@@ -1,0 +1,130 @@
+---
+---
+
+
+/* This is .scss code that needs to be compiled with SASS */
+/* This is an exercise in inheritance */
+%gchnav   {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.index  {
+    @extend %gchnav;
+    background-color: green;
+}
+.players  {
+    @extend %gchnav;
+    background-color: blue;
+}
+.honours  {
+    @extend %gchnav;
+    background-color: yellow;
+}
+.rivals  {
+    @extend %gchnav;
+    background-color: red;
+}
+
+
+/* This is .scss code that needs to be compiled with SASS */
+/* This is an exercise in variables */
+$weight: bold;
+
+ul  {
+    font-size: 14px;
+    font-weight: $weight;
+}
+
+ol  {
+    font-size: 14px;
+    font-weight: $weight;
+}
+
+/* This is .scss code that needs to be compiled with SASS */
+/* This is an exercise in nesting */
+#honours    {
+            font-size: 18px;
+            ol  {
+                color: yellow;
+            }
+}
+
+/* media query for responsive design on mobile phone screens */
+@media (min-width: 500px)   {
+    header h1::before   {
+        content: "DCFC: Derby County Football Club";
+    }
+}
+@media (max-width: 500px)   {
+    header h1::before   {
+        content: "DCFC";
+    }
+}
+
+/* This applies to the links in the Nav bar*/
+a:link
+{
+    color: red;
+    text-decoration: underline;
+}
+a:hover
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* This floats the image over to the left margin */
+/*.img-thumbnail
+{
+    float:left;
+}
+*/
+.caption    {
+    width: image width px;
+    font-size:80%;
+    text-align: center;
+}
+
+ul li   {
+    color: red;
+}
+
+/* Image borrowed from Unsplash.com */
+#honours   {
+    background-image: url('https://images.unsplash.com/photo-1514820720301-4c4790309f46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    color: white;
+}
+#honours p, ol  {
+    background-color: #2e160f;
+}
+
+table   {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+th, td  {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th  {
+    background-color: lightgray;
+}
+
+tr > td  {
+    color: red;
+}
+
+#total  {
+    border: 2px solid black;
+}
